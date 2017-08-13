@@ -11,17 +11,28 @@
   "license": "ISC",
   "dependencies": {
     "@angular/cli": "^1.1.3",
+<<<<<<< HEAD
     "bower": "^1.8.0",
+=======
+    "bitballoon": "^0.2.2",
+    "body-parser": "^1.17.2",
+>>>>>>> 13c3bd2408dd78082b57908497768c359edaf4ef
     "cheerio": "^1.0.0-rc.1",
     "express": "^4.15.3",
     "fs": "0.0.1-security",
     "gulp": "^3.9.1",
     "gulp-jscs": "^4.0.0",
     "gulp-jshint": "^2.0.4",
+    "handlebars": "^4.0.10",
     "jshint-stylish": "^2.2.1",
+<<<<<<< HEAD
     "nodemon": "^1.11.0",
+=======
+    "mongodb": "^2.2.30",
+>>>>>>> 13c3bd2408dd78082b57908497768c359edaf4ef
     "passport": "^0.3.2",
-    "request": "^2.81.0"
+    "request": "^2.81.0",
+    "wiredep": "^4.0.0"
   },
   "devDependencies": {
     "jshint": "^2.9.5"

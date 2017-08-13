@@ -3,29 +3,36 @@
  */
 /*jslint node: true */
 
-(function() {
-    'use strict';
-
 
     var express = require('express');
+    var request = require('request');
+    var bodyParser = require('body-parser');
     var app = express();
-    var exports;
+    var mongo = require('./mongoDB');
 
-    app.use(express.static('public'));
 
-    app.get('/', function(req, res){
-        res.send('Are you ready for the showcase');
-    });
+    var person = [];
+
+app.use(bodyParser.urlencoded({ extended: true }));
+    app.use(bodyParser.json());
+
+    app.use('/',express.static('public'));
 
     app.get('/upload', function (req,res) {
         res.send("Upload your files");
+    });
+
+    app.post('/getData',function(req,res) {
+
+
+    });
+
+    mongo.dbConnect(function(){
+        app.listen('8081',function(){
+            console.log("Server is listening to port 8081")
+        });
 
     });
 
 
-    app.listen('8081');
-    console.log('Magic happen at 8081');
 
-    exports = module.exports = app;
-
-})();
